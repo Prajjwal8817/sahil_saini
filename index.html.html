@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy School, Tantiyawas, Jaipur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schoolBlue: '#1e3a8a',
+                        schoolGold: '#d97706',
+                        schoolLight: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-schoolLight text-slate-800 antialiased selection:bg-schoolGold selection:text-white">
+
+    <div class="bg-schoolBlue text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-map-marker-alt text-schoolGold mr-1"></i> Tantiyawas, Near Toll Plaza Rampura, Jaipur</span>
+                <span class="hidden md:inline"><i class="fas fa-phone-alt text-schoolGold mr-1"></i> +91 9461621980</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-envelope text-schoolGold mr-1"></i> info@brightfutureacademy.edu</span>
+                <a href="#admissions" class="bg-schoolGold hover:bg-amber-600 text-white px-3 py-0.5 rounded-full font-medium transition shadow-sm">Admissions Open 2026-27</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & School Name -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center font-bold text-2xl shadow-lg border-2 border-schoolGold">
+                        BF
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-schoolBlue leading-tight">Bright Future Academy</h1>
+                        <p class="text-xs text-slate-500 font-medium tracking-wide">Tantiyawas, Jaipur</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-6 font-medium text-slate-700">
+                    <a href="#home" class="hover:text-schoolBlue transition">Home</a>
+                    <a href="#about" class="hover:text-schoolBlue transition">About Us</a>
+                    <a href="#academics" class="hover:text-schoolBlue transition">Academics</a>
+                    <a href="#facilities" class="hover:text-schoolBlue transition">Facilities</a>
+                    <a href="#gallery" class="hover:text-schoolBlue transition">Gallery</a>
+                    <a href="#admissions" class="hover:text-schoolBlue transition">Admissions</a>
+                    <a href="#contact" class="hover:text-schoolBlue transition">Contact Us</a>
+                </nav>
+
+                <!-- Call to Action & Mobile Menu Button -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:9461621980" class="hidden sm:inline-flex items-center gap-2 bg-schoolBlue hover:bg-blue-900 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition shadow-md">
+                        <i class="fas fa-phone text-schoolGold"></i> 9461621980
+                    </a>
+                    <button id="menu-btn" class="lg:hidden text-slate-700 hover:text-schoolBlue focus:outline-none p-2 rounded-lg">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-6 shadow-xl">
+            <div class="flex flex-col gap-3 font-medium text-slate-700">
+                <a href="#home" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Home</a>
+                <a href="#about" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">About Us</a>
+                <a href="#academics" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Academics</a>
+                <a href="#facilities" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Facilities</a>
+                <a href="#gallery" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Gallery</a>
+                <a href="#admissions" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Admissions</a>
+                <a href="#contact" class="mobile-link py-2 px-3 hover:bg-slate-50 rounded-lg">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-gradient-to-br from-blue-950 via-schoolBlue to-blue-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 bg-schoolGold/20 text-schoolGold border border-schoolGold/30 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                        <i class="fas fa-award"></i> Welcome to Bright Future Academy
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Shaping <span class="text-schoolGold">Tomorrow's Leaders</span> Today
+                    </h1>
+                    <p class="text-lg text-slate-200 leading-relaxed max-w-xl">
+                        Empowering young minds with world-class education, strong moral values, modern facilities, and dedicated mentorship in Tantiyawas, Jaipur.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#admissions" class="bg-schoolGold hover:bg-amber-600 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2">
+                            <span>Apply Now</span> <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-8 py-3.5 rounded-xl transition">
+                            Explore More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Card / Highlights Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 shadow-xl">
+                        <div class="w-12 h-12 bg-schoolGold text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-1">Quality Ed.</h3>
+                        <p class="text-slate-300 text-sm">Comprehensive CBSE curriculum focus.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 shadow-xl mt-6">
+                        <div class="w-12 h-12 bg-schoolGold text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-1">Safe Campus</h3>
+                        <p class="text-slate-300 text-sm">Secure CCTV monitored environment.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 shadow-xl">
+                        <div class="w-12 h-12 bg-schoolGold text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-1">Expert Faculty</h3>
+                        <p class="text-slate-300 text-sm">Experienced & passionate teachers.</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/15 shadow-xl mt-6">
+                        <div class="w-12 h-12 bg-schoolGold text-white rounded-xl flex items-center justify-center text-xl mb-4 shadow">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-1">Transport</h3>
+                        <p class="text-slate-300 text-sm">Safe bus service across local routes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">About Our Institution</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-schoolBlue mt-2">Nurturing Excellence & Integrity</h2>
+                <div class="w-20 h-1 bg-schoolGold mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Bright Future Academy School, located near Toll Plaza Rampura in Tantiyawas, Jaipur, is dedicated to delivering holistic education that blends academic rigor with moral values and sportsmanship.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start mb-16">
+                <!-- Mission -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-schoolBlue mb-3">Our Mission</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        To provide an engaging, disciplined, and empowering learning environment where every child discovers their innate potential, builds critical thinking skills, and becomes a confident, responsible citizen.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-schoolBlue mb-3">Our Vision</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        To be a leading center of educational excellence in Jaipur, known for producing innovative thinkers, ethical leaders, and well-rounded individuals prepared for the challenges of tomorrow.
+                    </p>
+                </div>
+
+                <!-- Core Values -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-schoolBlue mb-3">Core Values</h3>
+                    <ul class="text-slate-600 space-y-2">
+                        <li><i class="fas fa-check-circle text-schoolGold mr-2"></i> Integrity & Moral Discipline</li>
+                        <li><i class="fas fa-check-circle text-schoolGold mr-2"></i> Pursuit of Academic Excellence</li>
+                        <li><i class="fas fa-check-circle text-schoolGold mr-2"></i> Respect & Inclusivity</li>
+                        <li><i class="fas fa-check-circle text-schoolGold mr-2"></i> Continuous Innovation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Director's Message -->
+            <div class="bg-gradient-to-r from-blue-900 to-schoolBlue text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-white/5 text-9xl font-extrabold select-none pointer-events-none">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-center relative z-10">
+                    <div class="lg:col-span-1 text-center">
+                        <div class="w-36 h-36 mx-auto rounded-full bg-slate-200 border-4 border-schoolGold overflow-hidden shadow-xl flex items-center justify-center text-slate-400">
+                            <img src="https://placehold.co/200x200/1e3a8a/d97706?text=Director" alt="Mr. Mukesh Kumar Sharma" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200/1e3a8a/d97706?text=Director'">
+                        </div>
+                        <h4 class="text-xl font-bold mt-4">Mr. Mukesh Kumar Sharma</h4>
+                        <p class="text-schoolGold font-medium text-sm">Director, Bright Future Academy</p>
+                        <p class="text-slate-300 text-xs mt-1"><i class="fas fa-phone mr-1"></i> +91 9461621980</p>
+                    </div>
+                    <div class="lg:col-span-3 space-y-4">
+                        <span class="bg-schoolGold/20 text-schoolGold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">Director's Message</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold">"Education is the most powerful weapon which you can use to change the world."</h3>
+                        <p class="text-slate-200 leading-relaxed">
+                            Welcome to Bright Future Academy School, Tantiyawas. Our vision is not just to impart bookish knowledge, but to inculcate wisdom, curiosity, character, and leadership in every student who walks through our gates. We provide a nurturing atmosphere where children feel safe to experiment, learn, and excel. I invite you to join our vibrant academic family and witness your child blossom into a successful individual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="py-20 bg-schoolLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">Academic Programs</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-schoolBlue mt-2">Comprehensive Learning Stages</h2>
+                <div class="w-20 h-1 bg-schoolGold mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    We offer a structured, progressive curriculum designed to stimulate intellect and cater to every stage of a student's developmental growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pre-Primary -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border-t-4 border-schoolGold flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-schoolGold rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                            01
+                        </div>
+                        <h3 class="text-xl font-bold text-schoolBlue mb-3">Pre-Primary</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Playgroup, LKG & UKG. Focusing on experiential learning, motor skills, social interaction, and foundational literacy through fun and play.
+                        </p>
+                    </div>
+                    <span class="text-xs bg-schoolLight text-slate-600 px-3 py-1.5 rounded-lg font-medium text-center">Age: 3 - 6 Years</span>
+                </div>
+
+                <!-- Primary -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border-t-4 border-schoolBlue flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-schoolBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                            02
+                        </div>
+                        <h3 class="text-xl font-bold text-schoolBlue mb-3">Primary Wing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Classes I to V. Building strong fundamental concepts in Mathematics, Languages, Environmental Studies, and creative arts.
+                        </p>
+                    </div>
+                    <span class="text-xs bg-schoolLight text-slate-600 px-3 py-1.5 rounded-lg font-medium text-center">Classes I - V</span>
+                </div>
+
+                <!-- Middle School -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border-t-4 border-schoolGold flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-schoolGold rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                            03
+                        </div>
+                        <h3 class="text-xl font-bold text-schoolBlue mb-3">Middle School</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Classes VI to VIII. Introducing advanced scientific inquiry, social sciences, computer education, and analytical reasoning.
+                        </p>
+                    </div>
+                    <span class="text-xs bg-schoolLight text-slate-600 px-3 py-1.5 rounded-lg font-medium text-center">Classes VI - VIII</span>
+                </div>
+
+                <!-- Senior Secondary -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border-t-4 border-schoolBlue flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-schoolBlue rounded-xl flex items-center justify-center text-xl mb-6 font-bold">
+                            04
+                        </div>
+                        <h3 class="text-xl font-bold text-schoolBlue mb-3">Secondary Wing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Classes IX & X. Rigorous board exam preparation, career counseling, practical lab work, and personality development workshops.
+                        </p>
+                    </div>
+                    <span class="text-xs bg-schoolLight text-slate-600 px-3 py-1.5 rounded-lg font-medium text-center">Classes IX - X</span>
+                </div>
+            </div>
+
+            <!-- Teaching Methodology Banner -->
+            <div class="mt-16 bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">Pedagogy</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-schoolBlue mt-2">Innovative Teaching Methodology</h3>
+                        <p class="text-slate-600 mt-4 leading-relaxed">
+                            We believe rote learning is outdated. Our teachers employ activity-based learning, smart classes, group discussions, project-based assignments, and regular formative assessments to ensure concept clarity.
+                        </p>
+                        <div class="mt-6 grid grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-schoolGold text-xl"></i>
+                                <span class="font-semibold text-slate-700">Smart Classrooms</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-schoolGold text-xl"></i>
+                                <span class="font-semibold text-slate-700">Rem closeModal</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-schoolGold text-xl"></i>
+                                <span class="font-semibold text-slate-700">Individual Attention</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-check-circle text-schoolGold text-xl"></i>
+                                <span class="font-semibold text-slate-700">Moral & Ethics Focus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg h-72">
+                        <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Modern+Classroom+Learning" alt="Classroom learning" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Classroom'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">Campus & Infrastructure</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-schoolBlue mt-2">World-Class Facilities for Students</h2>
+                <div class="w-20 h-1 bg-schoolGold mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Our sprawling campus is equipped with modern infrastructure to support academics, sports, arts, and safety.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Facility 1 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-chalkboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Smart Classrooms</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Airy, well-ventilated classrooms equipped with digital smart boards and audio-visual teaching aids for immersive learning.
+                    </p>
+                </div>
+
+                <!-- Facility 2 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Science Laboratories</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Well-equipped Physics, Chemistry, and Biology labs allowing students to perform experiments and grasp practical scientific concepts.
+                    </p>
+                </div>
+
+                <!-- Facility 3 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Computer Lab</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Modern computer lab with high-speed internet connection and latest systems for hands-on IT training starting from early grades.
+                    </p>
+                </div>
+
+                <!-- Facility 4 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Rich Library</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        An extensive collection of textbooks, reference guides, storybooks, encyclopedias, and magazines in a quiet, studious atmosphere.
+                    </p>
+                </div>
+
+                <!-- Facility 5 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Sports Ground</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Spacious outdoor sports ground for cricket, football, basketball, athletics, and indoor gaming facilities for physical fitness.
+                    </p>
+                </div>
+
+                <!-- Facility 6 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 hover:shadow-lg transition group">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-xl flex items-center justify-center text-2xl mb-6 shadow group-hover:bg-schoolGold group-hover:text-white transition">
+                        <i class="fas fa-bus-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-schoolBlue mb-2">Safe Transport & Security</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Reliable school bus transport covering nearby areas with GPS tracking, plus 24/7 CCTV surveillance and gated campus security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-schoolLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">Photo Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-schoolBlue mt-2">Glimpses of Bright Future Academy</h2>
+                <div class="w-20 h-1 bg-schoolGold mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Explore moments of joy, learning, cultural events, and sports activities captured across our campus.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=School+Building+View" alt="Campus Building" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Campus'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Main Campus Building</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/d97706/ffffff?text=Science+Lab+Activity" alt="Science Lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Science+Lab'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Students in Science Lab</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Sports+Day+Event" alt="Sports Day" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Sports+Day'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Annual Sports Meet</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/d97706/ffffff?text=Cultural+Dance+Fest" alt="Cultural Event" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Cultural+Event'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Cultural Fest & Celebrations</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Computer+Lab+Training" alt="Computer Lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Computer+Lab'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Computer Lab Session</span>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-64 bg-slate-200">
+                    <img src="https://placehold.co/600x400/d97706/ffffff?text=Library+Reading+Time" alt="Library" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Library'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-bold text-lg">Library Reading Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="py-20 bg-gradient-to-br from-blue-900 to-schoolBlue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="bg-schoolGold/20 text-schoolGold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">Admissions Open 2026-27</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Begin Your Child's Journey to Success</h2>
+                    <p class="text-slate-200 mt-4 leading-relaxed">
+                        Admissions are now open for Pre-Primary to Class X. Give your child the advantage of quality education, personal mentorship, and a disciplined campus environment in Tantiyawas, Jaipur.
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-schoolGold flex items-center justify-center font-bold text-white">1</div>
+                            <div>
+                                <h4 class="font-bold">Submit Enquiry Online</h4>
+                                <p class="text-slate-300 text-sm">Fill out the quick form with student details.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-schoolGold flex items-center justify-center font-bold text-white">2</div>
+                            <div>
+                                <h4 class="font-bold">Campus Visit & Interaction</h4>
+                                <p class="text-slate-300 text-sm">Visit our campus near Toll Plaza Rampura, Jaipur.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-schoolGold flex items-center justify-center font-bold text-white">3</div>
+                            <div>
+                                <h4 class="font-bold">Enrollment & Welcome</h4>
+                                <p class="text-slate-300 text-sm">Complete documentation and welcome to Bright Future Academy!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enquiry Form Card -->
+                <div class="bg-white text-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-schoolBlue mb-2">Quick Admission Enquiry</h3>
+                    <p class="text-slate-500 text-sm mb-6">Fill in your details and our admission counselor will contact you shortly.</p>
+                    
+                    <form id="enquiry-form" class="space-y-4" onsubmit="handleEnquiry(event)">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Student's Full Name</label>
+                            <input type="text" id="student-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm" placeholder="Enter student name">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Parent's Name</label>
+                                <input type="text" id="parent-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm" placeholder="Enter parent name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Mobile Number</label>
+                                <input type="tel" id="mobile" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm" placeholder="10-digit mobile number">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Seeking Admission For Class</label>
+                            <select id="class-select" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm bg-white">
+                                <option value="">Select Class</option>
+                                <option value="Pre-Primary">Pre-Primary (Playgroup / LKG / UKG)</option>
+                                <option value="Class 1-5">Primary (Class I - V)</option>
+                                <option value="Class 6-8">Middle School (Class VI - VIII)</option>
+                                <option value="Class 9-10">Secondary (Class IX - X)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1">Message / Address / Queries</label>
+                            <textarea id="message" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm" placeholder="Any specific questions?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-schoolGold hover:bg-amber-600 text-white font-bold py-3.5 rounded-xl shadow-lg transition">
+                            Submit Enquiry
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-4 bg-emerald-50 text-emerald-700 rounded-xl text-center font-medium text-sm">
+                        Thank you! Your enquiry has been submitted successfully. We will call you soon.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-schoolGold font-bold uppercase tracking-wider text-sm">Get in Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-schoolBlue mt-2">Contact Bright Future Academy</h2>
+                <div class="w-20 h-1 bg-schoolGold mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    We would love to hear from you. Visit our campus or reach out via phone or email.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Info Box 1 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-schoolBlue mb-2">School Address</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Tantiyawas, Near Toll Plaza Rampura, Jaipur, Rajasthan - 303704
+                    </p>
+                </div>
+
+                <!-- Info Box 2 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-schoolBlue mb-2">Phone & Director</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Director: Mr. Mukesh Kumar Sharma<br>
+                        Mobile: <a href="tel:9461621980" class="text-schoolBlue font-bold hover:underline">+91 9461621980</a>
+                    </p>
+                </div>
+
+                <!-- Info Box 3 -->
+                <div class="bg-schoolLight p-8 rounded-2xl border border-slate-200 text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-schoolBlue text-schoolGold rounded-full flex items-center justify-center text-xl mb-4 shadow">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-schoolBlue mb-2">Working Hours</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Monday - Saturday: 8:00 AM - 2:00 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </div>
+
+            <!-- Map and Contact Form Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Map Placeholder / Embedded Map -->
+                <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-200 h-96 relative bg-slate-100 flex items-center justify-center">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.451785536544!2d75.75!3d27.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z🧬v!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        class="w-full h-full">
+                    </iframe>
+                    <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3 rounded-xl shadow text-xs text-slate-700 text-center font-medium">
+                        <i class="fas fa-map-pin text-schoolGold mr-1"></i> Tantiyawas, Near Toll Plaza Rampura, Jaipur
+                    </div>
+                </div>
+
+                <!-- Direct Message Form -->
+                <div class="bg-schoolLight p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-schoolBlue mb-2">Send Us a Message</h3>
+                    <p class="text-slate-600 text-sm mb-6">Have questions? Drop us a line and we'll get back to you promptly.</p>
+                    <form onsubmit="handleContact(event)" class="space-y-4">
+                        <div>
+                            <input type="text" required placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm bg-white">
+                        </div>
+                        <div>
+                            <input type="tel" required placeholder="Your Mobile Number" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm bg-white">
+                        </div>
+                        <div>
+                            <textarea rows="4" required placeholder="Your Message" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-schoolBlue text-sm bg-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-schoolBlue hover:bg-blue-900 text-white font-bold py-3.5 rounded-xl shadow transition">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="contact-success" class="hidden mt-4 p-3 bg-emerald-50 text-emerald-700 rounded-xl text-center font-medium text-sm">
+                        Message sent successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-schoolGold text-white rounded-xl flex items-center justify-center font-bold text-xl shadow">
+                            BF
+                        </div>
+                        <h3 class="text-white font-bold text-lg">Bright Future Academy</h3>
+                    </div>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Shaping tomorrow's leaders through quality education, strong moral values, discipline, and modern facilities in Tantiyawas, Jaipur.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-schoolGold text-white rounded-lg flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-schoolGold text-white rounded-lg flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-schoolGold text-white rounded-lg flex items-center justify-center transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-9 h-9 bg-slate-800 hover:bg-schoolGold text-white rounded-lg flex items-center justify-center transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-schoolGold pl-3">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-schoolGold transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-schoolGold transition">About Us</a></li>
+                        <li><a href="#academics" class="hover:text-schoolGold transition">Academics</a></li>
+                        <li><a href="#facilities" class="hover:text-schoolGold transition">Facilities</a></li>
+                        <li><a href="#gallery" class="hover:text-schoolGold transition">Photo Gallery</a></li>
+                        <li><a href="#admissions" class="hover:text-schoolGold transition">Admissions</a></li>
+                        <li><a href="#contact" class="hover:text-schoolGold transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-schoolGold pl-3">Academic Wings</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><span class="hover:text-schoolGold transition">Pre-Primary (Playgroup - UKG)</span></li>
+                        <li><span class="hover:text-schoolGold transition">Primary School (Class I - V)</span></li>
+                        <li><span class="hover:text-schoolGold transition">Middle School (Class VI - VIII)</span></li>
+                        <li><span class="hover:text-schoolGold transition">Secondary Wing (Class IX - X)</span></li>
+                        <li><span class="hover:text-schoolGold transition">Smart Classes & Labs</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4 border-l-4 border-schoolGold pl-3">Leadership & Contact</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user-tie text-schoolGold mt-1"></i>
+                            <div>
+                                <span class="text-slate-300 font-medium">Director:</span><br>
+                                <strong class="text-white">Mr. Mukesh Kumar Sharma</strong>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-phone-alt text-schoolGold mt-1"></i>
+                            <div>
+                                <span class="text-slate-300 font-medium">Mobile Number:</span><br>
+                                <a href="tel:9461621980" class="text-white hover:text-schoolGold font-bold">+91 9461621980</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-schoolGold mt-1"></i>
+                            <div>
+                                <span class="text-slate-300 font-medium">Location:</span><br>
+                                <span>Tantiyawas, Near Toll Plaza Rampura, Jaipur</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Bright Future Academy School, Tantiyawas, Jaipur. All Rights Reserved.</p>
+                <p class="flex items-center gap-1">Designed for Excellence | Director: Mr. Mukesh Kumar Sharma</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Enquiry Form Handler
+        function handleEnquiry(event) {
+            event.preventDefault();
+            const formSuccess = document.getElementById('form-success');
+            formSuccess.classList.remove('hidden');
+            document.getElementById('enquiry-form').reset();
+            setTimeout(() => {
+                formSuccess.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Contact Form Handler
+        function handleContact(event) {
+            event.preventDefault();
+            const contactSuccess = document.getElementById('contact-success');
+            contactSuccess.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                contactSuccess.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
